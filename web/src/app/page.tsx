@@ -90,13 +90,13 @@ export default function Home() {
             />
 
             <div>
-              <h1 className="text-6xl leading-[0.9] text-[color:var(--ssc-river-night)] sm:text-7xl lg:text-8xl">
+              <h1 className="text-6xl leading-[0.9] text-(--ssc-river-night) sm:text-7xl lg:text-8xl">
                 Sranan Story Collective
               </h1>
-              <p className="mt-5 text-2xl leading-9 text-[color:var(--ssc-river-night)]/90">
+              <p className="mt-5 text-2xl leading-9 text-(--ssc-river-night)/90">
                 In het kort: SSC voegt het menselijk verhaal toe aan de STM.
               </p>
-              <p className="mt-5 max-w-4xl text-lg leading-9 text-[color:var(--ssc-river-night)]/88">
+              <p className="mt-5 max-w-4xl text-lg leading-9 text-(--ssc-river-night)/88">
                 Samen met Surinaams-Nederlandse diasporagemeenschappen in
                 Amsterdam en elders in Nederland bouwen we aan een uitnodigend
                 platform waar verhalen gedeeld kunnen worden, met de kankantrie
@@ -106,27 +106,27 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="mt-10 h-[2px] w-full bg-[linear-gradient(90deg,transparent,rgba(23,37,64,0.35),rgba(166,71,50,0.4),transparent)]" />
+          <div className="mt-10 h-0.5] w-full bg-[linear-gradient(90deg,transparent,rgba(23,37,64,0.35),rgba(166,71,50,0.4),transparent)]" />
         </header>
 
         <div className="relative mx-auto w-full max-w-5xl px-6 pb-12 sm:px-12">
           <div className="absolute bottom-0 left-6 top-0 w-px bg-[linear-gradient(180deg,rgba(23,37,64,0.05),rgba(23,37,64,0.35),rgba(166,71,50,0.4),rgba(23,37,64,0.05))] sm:left-12" />
 
           <section className="relative py-8 pl-6 sm:pl-10">
-            <h2 className="text-4xl text-[color:var(--ssc-river-night)]">
+            <h2 className="text-4xl text-(--ssc-river-night)">
               Wat is Sranan Story Collective?
             </h2>
-            <p className="mt-4 leading-8 text-[color:var(--ssc-river-night)]/92">
+            <p className="mt-4 leading-8 text-(--ssc-river-night)/92">
               SSC is de brug naar een duurzame, door community gedragen
               aanvulling op de STM die verhalen, beelden, geluid, plekken en
               geschiedenis in samenhang toont en bewaart.
             </p>
-            <p className="mt-4 leading-8 text-[color:var(--ssc-river-night)]/92">
+            <p className="mt-4 leading-8 text-(--ssc-river-night)/92">
               Op deze manier voegt SSC het menselijke verhaal achter de
               koloniale archieven toe in samenwerking met de Surinaamse
               gemeenschappen.
             </p>
-            <p className="mt-4 leading-8 text-[color:var(--ssc-river-night)]/92">
+            <p className="mt-4 leading-8 text-(--ssc-river-night)/92">
               De community builders vormen samen met Afro-Surinaamse,
               Hindoestaanse, Javaanse, Marron, Chinese en Inheemse gemeenschap -
               iedereen die wortels heeft in Suriname - een nieuw collectief dat
@@ -135,13 +135,13 @@ export default function Home() {
           </section>
 
           <section className="relative py-8 pl-6 sm:pl-10">
-            <div className="mb-4 text-sm uppercase tracking-[0.14em] text-[color:var(--ssc-kankantrie-canopy)]">
+            <div className="mb-4 text-sm uppercase tracking-[0.14em] text-(--ssc-kankantrie-canopy)">
               Verbinding met de STM
             </div>
-            <h2 className="text-4xl text-[color:var(--ssc-kankantrie-canopy)]">
+            <h2 className="text-4xl text-(--ssc-kankantrie-canopy)">
               Wat is Suriname Tijdmachine?
             </h2>
-            <p className="mt-4 leading-8 text-[color:var(--ssc-river-night)]/92">
+            <p className="mt-4 leading-8 text-(--ssc-river-night)/92">
               De Tijdmachine integreert een steeds groeiend aantal databanken
               uit het Surinaamse verleden, beheerd door verschillende
               erfgoedinstellingen, op een digitale kaart. Onderzoekers kunnen
@@ -150,17 +150,17 @@ export default function Home() {
               terug, ook wanneer namen of adressen in de loop van de tijd zijn
               veranderd.
             </p>
-            <p className="mt-4 leading-8 text-[color:var(--ssc-river-night)]/92">
+            <p className="mt-4 leading-8 text-(--ssc-river-night)/92">
               De SMT richt zich op het digitaal uitbreiden en toegankelijker
               maken van de Surinaamse geschiedenis voor historisch- en
               stamboomonderzoek.
             </p>
-            <div className="mt-6 flex flex-wrap gap-4 text-sm font-semibold text-[color:var(--ssc-river-night)]">
+            <div className="mt-6 flex flex-wrap gap-4 text-sm font-semibold text-(--ssc-river-night)">
               <a
                 href="https://surinametijdmachine.org/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 border-b-2 border-[color:var(--ssc-ibis-red)]/60 pb-1 hover:border-[color:var(--ssc-river-night)]"
+                className="inline-flex items-center gap-2 border-b-2 border-(--ssc-ibis-red)/60 pb-1 hover:border-(--ssc-river-night)"
               >
                 <IbisIcon src="/red-ibis-2.svg" className="mt-0.5" />
                 surinametijdmachine.org
@@ -169,7 +169,7 @@ export default function Home() {
                 href="https://hdsc.ning.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 border-b-2 border-[color:var(--ssc-ibis-red)]/60 pb-1 hover:border-[color:var(--ssc-river-night)]"
+                className="inline-flex items-center gap-2 border-b-2 border-(--ssc-ibis-red)/60 pb-1 hover:border-(--ssc-river-night)"
               >
                 <IbisIcon src="/red-ibis-3.svg" className="mt-0.5" />
                 hdsc.ning.com
@@ -178,7 +178,7 @@ export default function Home() {
           </section>
 
           <section className="relative py-8 pl-6 sm:pl-10">
-            <blockquote className="border-l-2 border-[color:var(--ssc-ibis-red)] pl-5 text-lg leading-8 text-[color:var(--ssc-river-night)]/86 italic">
+            <blockquote className="border-l-2 border-(--ssc-ibis-red) pl-5 text-lg leading-8 text-(--ssc-river-night)/86 italic">
               “Wij streven ernaar een uitnodigend en toegankelijk platform te
               creëren waar mensen zich vrij en veilig voelen om hun verhalen te
               delen.”
@@ -186,15 +186,15 @@ export default function Home() {
           </section>
 
           <section className="relative py-8 pl-6 sm:pl-10">
-            <h2 className="text-4xl text-[color:var(--ssc-ibis-red)]">
+            <h2 className="text-4xl text-(--ssc-ibis-red)">
               Methodologie en co-creatie
             </h2>
-            <p className="mt-4 leading-8 text-[color:var(--ssc-river-night)]/92">
+            <p className="mt-4 leading-8 text-(--ssc-river-night)/92">
               In dit project houdt co-creatie in: het betrekken van
               gemeenschapsbouwers en leden van de gemeenschap bij discussies
               over:
             </p>
-            <ul className="mt-4 space-y-2 text-[color:var(--ssc-river-night)]/92">
+            <ul className="mt-4 space-y-2 text-(--ssc-river-night)/92">
               {cocreatiePunten.map((punt, index) => (
                 <IbisBullet
                   key={punt}
@@ -203,7 +203,7 @@ export default function Home() {
                 />
               ))}
             </ul>
-            <p className="mt-4 leading-8 text-[color:var(--ssc-river-night)]/92">
+            <p className="mt-4 leading-8 text-(--ssc-river-night)/92">
               In deze fase combineert de methodologie bestaande
               participatievormen van de STM, zoals mapathons en dataverrijking,
               met de gemeenschapsopbouw, consultatie en toekomstige vertelvormen
@@ -212,10 +212,10 @@ export default function Home() {
           </section>
 
           <section className="relative py-8 pl-6 sm:pl-10">
-            <h2 className="text-4xl text-[color:var(--ssc-river-night)]">
+            <h2 className="text-4xl text-(--ssc-river-night)">
               Kernboodschappen
             </h2>
-            <ul className="mt-4 space-y-3 leading-8 text-[color:var(--ssc-river-night)]/92">
+            <ul className="mt-4 space-y-3 leading-8 text-(--ssc-river-night)/92">
               {kernboodschappen.map((item, index) => (
                 <IbisBullet
                   key={item}
@@ -227,22 +227,20 @@ export default function Home() {
           </section>
 
           <section className="relative py-8 pl-6 sm:pl-10">
-            <h2 className="text-4xl text-[color:var(--ssc-river-night)]">
-              Het team
-            </h2>
-            <p className="mt-4 leading-8 text-[color:var(--ssc-river-night)]/92">
+            <h2 className="text-4xl text-(--ssc-river-night)">Het team</h2>
+            <p className="mt-4 leading-8 text-(--ssc-river-night)/92">
               Het team van SSC bestaat uit drie community builders: Sharmila
               Badloe, Dewi van Leeuwen Sastromedjo en Angelique Hoogmoed.
             </p>
-            <p className="mt-4 leading-8 text-[color:var(--ssc-river-night)]/92">
+            <p className="mt-4 leading-8 text-(--ssc-river-night)/92">
               De onderzoekslijn via de Suriname Tijdmachine is zichtbaar in de
               samenwerking met Thunnis van Oort (projectleider) en Jona Schlegel
               (data en design).
             </p>
-            <p className="mt-4 leading-8 text-[color:var(--ssc-river-night)]/92">
+            <p className="mt-4 leading-8 text-(--ssc-river-night)/92">
               Bio-links:
             </p>
-            <ul className="mt-3 space-y-2 text-[color:var(--ssc-river-night)]/92">
+            <ul className="mt-3 space-y-2 text-(--ssc-river-night)/92">
               {teamLinks.map((member, index) => (
                 <li key={member.name} className="flex items-start gap-3">
                   <IbisIcon
@@ -256,7 +254,7 @@ export default function Home() {
                       href={member.href}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 border-b-2 border-[color:var(--ssc-ibis-red)]/60 pb-1 hover:border-[color:var(--ssc-river-night)]"
+                      className="inline-flex items-center gap-2 border-b-2 border-(--ssc-ibis-red)/60 pb-1 hover:border-(--ssc-river-night)"
                     >
                       {member.name}
                     </a>
@@ -272,20 +270,20 @@ export default function Home() {
           </section>
 
           <section className="relative py-8 pl-6 sm:pl-10">
-            <h2 className="text-4xl text-[color:var(--ssc-kankantrie-root)]">
+            <h2 className="text-4xl text-(--ssc-kankantrie-root)">
               Communicatie en publieksbereik
             </h2>
-            <p className="mt-4 leading-8 text-[color:var(--ssc-river-night)]/92">
+            <p className="mt-4 leading-8 text-(--ssc-river-night)/92">
               Vanwege beperkte inzetbaarheid communiceren wij vooralsnog per
               kwartaal nieuwsbrieven en gebruiken wij het emailadres als enige
               communicatiemiddel.
             </p>
-            <p className="mt-4 leading-8 text-[color:var(--ssc-river-night)]/92">
+            <p className="mt-4 leading-8 text-(--ssc-river-night)/92">
               We komen graag in contact met iedereen die hieraan een bijdrage
               wil leveren. We komen ook graag naar bestaande activiteiten om dit
               samen te bespreken.
             </p>
-            <p className="mt-4 leading-8 text-[color:var(--ssc-river-night)]/92">
+            <p className="mt-4 leading-8 text-(--ssc-river-night)/92">
               Onze website is nog under construction: streefdatum lancering 1
               augustus 2026.
             </p>

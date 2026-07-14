@@ -1,4 +1,39 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+This is the Next.js app for the Sranan Story Collective website.
+
+## GitHub Pages Deployment
+
+This repository deploys to GitHub Pages via GitHub Actions.
+
+Deployment setup is defined in:
+
+- `../.github/workflows/deploy-pages.yml`
+- `next.config.ts` (static export settings)
+
+### One-time GitHub setting
+
+In the GitHub repository settings:
+
+1. Go to `Settings` -> `Pages`.
+2. Set `Source` to `GitHub Actions`.
+
+### How deployment works
+
+1. Push to `main`.
+2. The workflow installs dependencies in `web/`.
+3. It runs `npm run build` (Next.js static export to `web/out`).
+4. If a root `CNAME` file exists, it is copied into `web/out/CNAME`.
+5. The exported site is published to GitHub Pages.
+
+### Verify locally before pushing
+
+From the `web/` directory:
+
+```bash
+npm run lint
+npm run build
+```
+
+If both commands pass, Pages deployment should succeed.
 
 ## Getting Started
 
@@ -28,9 +63,3 @@ To learn more about Next.js, take a look at the following resources:
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
