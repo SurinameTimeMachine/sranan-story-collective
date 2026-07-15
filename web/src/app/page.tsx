@@ -14,14 +14,23 @@ const cocreatiePunten = [
 ];
 
 const teamLinks = [
-  { name: 'Sharmila Badloe', href: '' },
+  {
+    name: 'Sharmila Badloe',
+    href: 'https://www.huygens.knaw.nl/medewerkers/sharmila-badloe/',
+  },
   {
     name: 'Dewi van Leeuwen Sastromedjo',
-    href: 'https://www.linkedin.com/in/dewi-van-leeuwen-sastromedjo-ab8b10129/',
+    href: 'https://www.huygens.knaw.nl/medewerkers/dewi-van-leeuwen-sastromedjo/',
   },
   { name: 'Angelique Hoogmoed', href: '' },
-  { name: 'Thunnis van Oort', href: '' },
-  { name: 'Jona Schlegel', href: '' },
+  {
+    name: 'Thunnis van Oort',
+    href: 'https://www.huygens.knaw.nl/medewerkers/thunnis-van-oort/',
+  },
+  {
+    name: 'Jona Schlegel',
+    href: 'https://www.huygens.knaw.nl/medewerkers/jona-schlegel/',
+  },
 ];
 
 function IbisIcon({
