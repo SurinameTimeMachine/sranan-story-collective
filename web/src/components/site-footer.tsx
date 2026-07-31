@@ -5,7 +5,7 @@ export default function SiteFooter() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="mt-auto border-t border-(--ssc-river-night)/15 bg-[linear-gradient(180deg,rgba(245,241,234,0.96),rgba(236,228,218,0.84))]">
+    <footer className="mt-auto bg-[linear-gradient(180deg,rgba(245,241,234,0.98),rgba(236,228,218,0.86))]">
       <div className="mx-auto grid w-full max-w-6xl gap-8 px-6 py-9 sm:px-12 lg:grid-cols-[1.15fr_1fr] lg:items-start">
         <div className="space-y-3">
           <div className="inline-flex items-center gap-2 text-(--ssc-river-night)">

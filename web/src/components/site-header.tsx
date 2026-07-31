@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export default function SiteHeader() {
   return (
-    <header className="sticky top-0 z-50 border-b border-(--ssc-river-night)/15 bg-[linear-gradient(180deg,rgba(250,248,244,0.96),rgba(242,240,235,0.92))] shadow-[0_8px_24px_rgba(23,37,64,0.06)] backdrop-blur">
+    <header className="sticky top-0 z-50 bg-[#f5f1ea]/98">
       <div className="mx-auto flex w-full max-w-6xl items-center justify-between gap-4 px-6 py-3 sm:px-12">
         <Link
           href="/"
