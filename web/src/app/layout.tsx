@@ -1,5 +1,6 @@
 import './globals.css';
 import SiteFooter from '@/components/site-footer';
+import SiteHeader from '@/components/site-header';
 import type { Metadata } from 'next';
 import { Cormorant_Garamond, Geist_Mono, Montserrat } from 'next/font/google';
 
@@ -87,6 +88,7 @@ export default function RootLayout({
       className={`${montserrat.variable} ${geistMono.variable} ${cormorant.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
+        <SiteHeader />
         {children}
         <SiteFooter />
       </body>

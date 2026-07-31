@@ -187,7 +187,7 @@ export default function Home() {
         <div className="relative mx-auto w-full max-w-5xl px-6 pb-12 sm:px-12">
           <div className="absolute bottom-0 left-6 top-0 w-px bg-[linear-gradient(180deg,rgba(23,37,64,0.05),rgba(23,37,64,0.35),rgba(166,71,50,0.4),rgba(23,37,64,0.05))] sm:left-12" />
 
-          <section className="relative py-8 pl-6 sm:pl-10">
+          <section id="collectief" className="relative py-8 pl-6 sm:pl-10">
             <h2 className="text-4xl text-(--ssc-river-night)">
               Wat is Sranan Story Collective?
             </h2>
@@ -209,7 +209,7 @@ export default function Home() {
             </p>
           </section>
 
-          <section className="relative py-8 pl-6 sm:pl-10">
+          <section id="tijdmachine" className="relative py-8 pl-6 sm:pl-10">
             <div className="mb-4 text-sm uppercase tracking-[0.14em] text-(--ssc-kankantrie-canopy)">
               Verbinding met de Suriname Time Machine
             </div>
@@ -252,7 +252,7 @@ export default function Home() {
             </div>
           </section>
 
-          <section className="relative py-8 pl-6 sm:pl-10">
+          <section id="cocreatie" className="relative py-8 pl-6 sm:pl-10">
             <blockquote className="border-l-2 border-(--ssc-ibis-red) pl-5 text-lg leading-8 text-(--ssc-river-night)/86 italic">
               “Wij streven ernaar een uitnodigend en toegankelijk platform te
               creëren waar mensen zich vrij en veilig voelen om hun verhalen te
@@ -301,10 +301,8 @@ export default function Home() {
             </ul>
           </section>
 
-          <section className="relative py-8 pl-6 sm:pl-10">
-            <h2 id="team" className="text-4xl text-(--ssc-river-night)">
-              Het team
-            </h2>
+          <section id="team" className="relative py-8 pl-6 sm:pl-10">
+            <h2 className="text-4xl text-(--ssc-river-night)">Het team</h2>
             <p className="mt-4 leading-8 text-(--ssc-river-night)/92">
               Het team van SSC bestaat uit drie community builders: Sharmila
               Badloe, Dewi van Leeuwen Sastromedjo en Angelique Hoogmoed.
@@ -346,7 +344,7 @@ export default function Home() {
             </ul>
           </section>
 
-          <section className="relative py-8 pl-6 sm:pl-10">
+          <section id="bereik" className="relative py-8 pl-6 sm:pl-10">
             <h2 className="text-4xl text-(--ssc-kankantrie-root)">
               Communicatie en publieksbereik
             </h2>
