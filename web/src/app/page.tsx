@@ -103,7 +103,7 @@ export default function Home() {
                 Sranan Story Collective
               </h1>
               <p className="mt-5 text-2xl leading-9 text-(--ssc-river-night)/90">
-                In het kort: SSC voegt het menselijk verhaal toe aan de STM.
+                In het kort: SSC voegt het menselijk verhaal toe aan de Suriname Time Machine.
               </p>
               <p className="mt-5 max-w-4xl text-lg leading-9 text-(--ssc-river-night)/88">
                 Samen met Surinaams-Nederlandse diasporagemeenschappen in
@@ -126,7 +126,7 @@ export default function Home() {
             </h2>
             <p className="mt-4 leading-8 text-(--ssc-river-night)/92">
               SSC is de brug naar een duurzame, door community gedragen
-              aanvulling op de STM die verhalen, beelden, geluid, plekken en
+              aanvulling op de Suriname Time Machine die verhalen, beelden, geluid, plekken en
               geschiedenis in samenhang toont en bewaart.
             </p>
             <p className="mt-4 leading-8 text-(--ssc-river-night)/92">
@@ -144,10 +144,10 @@ export default function Home() {
 
           <section className="relative py-8 pl-6 sm:pl-10">
             <div className="mb-4 text-sm uppercase tracking-[0.14em] text-(--ssc-kankantrie-canopy)">
-              Verbinding met de STM
+              Verbinding met de Suriname Time Machine
             </div>
             <h2 className="text-4xl text-(--ssc-kankantrie-canopy)">
-              Wat is Suriname Tijdmachine?
+              Wat is Suriname Time Machine?
             </h2>
             <p className="mt-4 leading-8 text-(--ssc-river-night)/92">
               De Tijdmachine integreert een steeds groeiend aantal databanken
@@ -159,7 +159,7 @@ export default function Home() {
               veranderd.
             </p>
             <p className="mt-4 leading-8 text-(--ssc-river-night)/92">
-              De SMT richt zich op het digitaal uitbreiden en toegankelijker
+              De Suriname Time Machine richt zich op het digitaal uitbreiden en toegankelijker
               maken van de Surinaamse geschiedenis voor historisch- en
               stamboomonderzoek.
             </p>
@@ -213,7 +213,7 @@ export default function Home() {
             </ul>
             <p className="mt-4 leading-8 text-(--ssc-river-night)/92">
               In deze fase combineert de methodologie bestaande
-              participatievormen van de STM, zoals mapathons en dataverrijking,
+              participatievormen van de Suriname Time Machine, zoals mapathons en dataverrijking,
               met de gemeenschapsopbouw, consultatie en toekomstige vertelvormen
               van SSC.
             </p>
@@ -241,7 +241,7 @@ export default function Home() {
               Badloe, Dewi van Leeuwen Sastromedjo en Angelique Hoogmoed.
             </p>
             <p className="mt-4 leading-8 text-(--ssc-river-night)/92">
-              De onderzoekslijn via de Suriname Tijdmachine is zichtbaar in de
+              De onderzoekslijn via de Suriname Time Machine is zichtbaar in de
               samenwerking met Thunnis van Oort (projectleider) en Jona Schlegel
               (data en design).
             </p>
@@ -292,8 +292,7 @@ export default function Home() {
               samen te bespreken.
             </p>
             <p className="mt-4 leading-8 text-(--ssc-river-night)/92">
-              Onze website is nog under construction: streefdatum lancering 1
-              augustus 2026.
+              Onze website is nog in aanbouw.
             </p>
           </section>
         </div>
