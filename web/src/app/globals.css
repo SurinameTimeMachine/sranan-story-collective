@@ -7,6 +7,10 @@
   --ssc-kankantrie-root: #733924;
   --ssc-suriname-earth: #995f4e;
   --ssc-ibis-red: #a64732;
+  --font-montserrat: 'Trebuchet MS', 'Segoe UI', sans-serif;
+  --font-geist-mono:
+    'SFMono-Regular', 'SF Mono', Consolas, 'Liberation Mono', monospace;
+  --font-story: 'Times New Roman', Georgia, serif;
 
   --background: var(--ssc-story-parchment);
   --foreground: var(--ssc-river-night);

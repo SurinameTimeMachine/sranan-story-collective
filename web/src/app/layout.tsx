@@ -2,23 +2,6 @@ import './globals.css';
 import SiteFooter from '@/components/site-footer';
 import SiteHeader from '@/components/site-header';
 import type { Metadata } from 'next';
-import { Cormorant_Garamond, Geist_Mono, Montserrat } from 'next/font/google';
-
-const montserrat = Montserrat({
-  variable: '--font-montserrat',
-  subsets: ['latin'],
-});
-
-const geistMono = Geist_Mono({
-  variable: '--font-geist-mono',
-  subsets: ['latin'],
-});
-
-const cormorant = Cormorant_Garamond({
-  variable: '--font-story',
-  subsets: ['latin'],
-  weight: ['500', '600', '700'],
-});
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://srananstorycollective.com'),
@@ -83,10 +66,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="nl"
-      className={`${montserrat.variable} ${geistMono.variable} ${cormorant.variable} h-full antialiased`}
-    >
+    <html lang="nl" className="h-full antialiased">
       <body className="min-h-full flex flex-col">
         <SiteHeader />
         {children}

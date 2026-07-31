@@ -1,6 +1,5 @@
 import OpenGraphImage from './opengraph-image';
 
-export const runtime = 'edge';
 export const dynamic = 'force-static';
 export const size = {
   width: 1200,
