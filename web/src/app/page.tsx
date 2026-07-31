@@ -103,7 +103,8 @@ export default function Home() {
                 Sranan Story Collective
               </h1>
               <p className="mt-5 text-2xl leading-9 text-(--ssc-river-night)/90">
-                In het kort: SSC voegt het menselijk verhaal toe aan de Suriname Time Machine.
+                In het kort: SSC voegt het menselijk verhaal toe aan de Suriname
+                Time Machine.
               </p>
               <p className="mt-5 max-w-4xl text-lg leading-9 text-(--ssc-river-night)/88">
                 Samen met Surinaams-Nederlandse diasporagemeenschappen in
@@ -126,8 +127,8 @@ export default function Home() {
             </h2>
             <p className="mt-4 leading-8 text-(--ssc-river-night)/92">
               SSC is de brug naar een duurzame, door community gedragen
-              aanvulling op de Suriname Time Machine die verhalen, beelden, geluid, plekken en
-              geschiedenis in samenhang toont en bewaart.
+              aanvulling op de Suriname Time Machine die verhalen, beelden,
+              geluid, plekken en geschiedenis in samenhang toont en bewaart.
             </p>
             <p className="mt-4 leading-8 text-(--ssc-river-night)/92">
               Op deze manier voegt SSC het menselijke verhaal achter de
@@ -159,9 +160,9 @@ export default function Home() {
               veranderd.
             </p>
             <p className="mt-4 leading-8 text-(--ssc-river-night)/92">
-              De Suriname Time Machine richt zich op het digitaal uitbreiden en toegankelijker
-              maken van de Surinaamse geschiedenis voor historisch- en
-              stamboomonderzoek.
+              De Suriname Time Machine richt zich op het digitaal uitbreiden en
+              toegankelijker maken van de Surinaamse geschiedenis voor
+              historisch- en stamboomonderzoek.
             </p>
             <div className="mt-6 flex flex-wrap gap-4 text-sm font-semibold text-(--ssc-river-night)">
               <a
@@ -213,9 +214,9 @@ export default function Home() {
             </ul>
             <p className="mt-4 leading-8 text-(--ssc-river-night)/92">
               In deze fase combineert de methodologie bestaande
-              participatievormen van de Suriname Time Machine, zoals mapathons en dataverrijking,
-              met de gemeenschapsopbouw, consultatie en toekomstige vertelvormen
-              van SSC.
+              participatievormen van de Suriname Time Machine, zoals mapathons
+              en dataverrijking, met de gemeenschapsopbouw, consultatie en
+              toekomstige vertelvormen van SSC.
             </p>
           </section>
 
@@ -235,7 +236,9 @@ export default function Home() {
           </section>
 
           <section className="relative py-8 pl-6 sm:pl-10">
-            <h2 className="text-4xl text-(--ssc-river-night)">Het team</h2>
+            <h2 id="team" className="text-4xl text-(--ssc-river-night)">
+              Het team
+            </h2>
             <p className="mt-4 leading-8 text-(--ssc-river-night)/92">
               Het team van SSC bestaat uit drie community builders: Sharmila
               Badloe, Dewi van Leeuwen Sastromedjo en Angelique Hoogmoed.
@@ -283,13 +286,25 @@ export default function Home() {
             </h2>
             <p className="mt-4 leading-8 text-(--ssc-river-night)/92">
               Vanwege beperkte inzetbaarheid communiceren wij vooralsnog per
-              kwartaal nieuwsbrieven en gebruiken wij het emailadres als enige
-              communicatiemiddel.
+              kwartaal nieuwsbrieven en delen wij updates en
+              contactmogelijkheden via de kanalen die op dat moment beschikbaar
+              zijn.
             </p>
             <p className="mt-4 leading-8 text-(--ssc-river-night)/92">
               We komen graag in contact met iedereen die hieraan een bijdrage
               wil leveren. We komen ook graag naar bestaande activiteiten om dit
               samen te bespreken.
+            </p>
+            <p className="mt-4 leading-8 text-(--ssc-river-night)/92">
+              Wie iemand uit het team rechtstreeks wil benaderen, kan terecht in
+              het{' '}
+              <a
+                href="#team"
+                className="border-b border-(--ssc-ibis-red)/60 pb-0.5 hover:border-(--ssc-river-night)"
+              >
+                teamoverzicht
+              </a>{' '}
+              hierboven.
             </p>
             <p className="mt-4 leading-8 text-(--ssc-river-night)/92">
               Onze website is nog in aanbouw.
