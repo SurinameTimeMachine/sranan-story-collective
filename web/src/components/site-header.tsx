@@ -3,48 +3,50 @@ import Link from 'next/link';
 
 export default function SiteHeader() {
   return (
-    <header className="sticky top-0 z-50 border-b border-(--ssc-river-night)/20 bg-[linear-gradient(180deg,rgba(250,248,244,0.96),rgba(242,240,235,0.9))] backdrop-blur">
+    <header className="sticky top-0 z-50 border-b border-(--ssc-river-night)/15 bg-[linear-gradient(180deg,rgba(250,248,244,0.96),rgba(242,240,235,0.92))] shadow-[0_8px_24px_rgba(23,37,64,0.06)] backdrop-blur">
       <div className="mx-auto flex w-full max-w-6xl items-center justify-between gap-4 px-6 py-3 sm:px-12">
         <Link
           href="/"
-          className="inline-flex items-center gap-2 text-lg font-semibold tracking-wide text-(--ssc-river-night) hover:text-(--ssc-kankantrie-root)"
+          className="inline-flex items-center gap-2 text-(--ssc-river-night) hover:text-(--ssc-kankantrie-root)"
         >
           <Image
             src="/ssc-logo.svg"
             alt=""
-            width={22}
-            height={24}
+            width={24}
+            height={26}
             aria-hidden="true"
             className="h-6 w-auto"
           />
-          Sranan Story Collective
+          <span className="font-(family-name:--font-story) text-2xl leading-none tracking-[0.01em] sm:text-[1.75rem]">
+            Sranan Story Collective
+          </span>
         </Link>
 
         <nav
           aria-label="Hoofdnavigatie"
-          className="flex items-center gap-4 text-sm font-semibold text-(--ssc-river-night) sm:gap-6"
+          className="flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.13em] text-(--ssc-river-night)/88 sm:gap-5"
         >
           <Link
             href="/#collectief"
-            className="border-b-2 border-transparent pb-0.5 hover:border-(--ssc-ibis-red)/70"
+            className="border-b-2 border-transparent pb-0.5 transition-colors hover:border-(--ssc-ibis-red)/70 hover:text-(--ssc-river-night)"
           >
             Collectief
           </Link>
           <Link
             href="/#tijdmachine"
-            className="border-b-2 border-transparent pb-0.5 hover:border-(--ssc-ibis-red)/70"
+            className="border-b-2 border-transparent pb-0.5 transition-colors hover:border-(--ssc-ibis-red)/70 hover:text-(--ssc-river-night)"
           >
             Tijdmachine
           </Link>
           <Link
             href="/#team"
-            className="border-b-2 border-transparent pb-0.5 hover:border-(--ssc-ibis-red)/70"
+            className="border-b-2 border-transparent pb-0.5 transition-colors hover:border-(--ssc-ibis-red)/70 hover:text-(--ssc-river-night)"
           >
             Team
           </Link>
           <Link
             href="/#bereik"
-            className="border-b-2 border-transparent pb-0.5 hover:border-(--ssc-ibis-red)/70"
+            className="border-b-2 border-transparent pb-0.5 transition-colors hover:border-(--ssc-ibis-red)/70 hover:text-(--ssc-river-night)"
           >
             Bereik
           </Link>
