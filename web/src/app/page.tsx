@@ -108,9 +108,8 @@ export default function Home() {
               <p className="mt-5 max-w-4xl text-lg leading-9 text-(--ssc-river-night)/88">
                 Samen met Surinaams-Nederlandse diasporagemeenschappen in
                 Amsterdam en elders in Nederland bouwen we aan een uitnodigend
-                platform waar verhalen gedeeld kunnen worden, met de kankantrie
-                als symbool voor verbinding en mensen als hart van het
-                collectief.
+                platform waar verhalen gedeeld kunnen worden, met een boom als
+                symbool voor verbinding en mensen als hart van het collectief.
               </p>
             </div>
           </div>
