@@ -2,9 +2,23 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Disclaimer en copyright | Sranan Story Collective',
+  title: 'Disclaimer en copyright',
   description:
-    'Disclaimer en copyrightinformatie voor de website van Sranan Story Collective.',
+    'Disclaimer en copyrightinformatie van Sranan Story Collective over gebruik van inhoud, aansprakelijkheid en externe links.',
+  alternates: {
+    canonical: '/disclaimer-copyright',
+  },
+  openGraph: {
+    title: 'Disclaimer en copyright | Sranan Story Collective',
+    description:
+      'Disclaimer en copyrightinformatie van Sranan Story Collective over gebruik van inhoud, aansprakelijkheid en externe links.',
+    url: '/disclaimer-copyright',
+  },
+  twitter: {
+    title: 'Disclaimer en copyright | Sranan Story Collective',
+    description:
+      'Disclaimer en copyrightinformatie van Sranan Story Collective over gebruik van inhoud, aansprakelijkheid en externe links.',
+  },
 };
 
 export default function DisclaimerCopyrightPage() {

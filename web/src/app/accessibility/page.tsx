@@ -2,9 +2,23 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Toegankelijkheidsverklaring | Sranan Story Collective',
+  title: 'Toegankelijkheidsverklaring',
   description:
-    'Toegankelijkheidsverklaring van Sranan Story Collective over digitale toegankelijkheid en verbeteracties.',
+    'Toegankelijkheidsverklaring van Sranan Story Collective met huidige stand, verbeteracties en hoe je een toegankelijkheidsprobleem kunt melden.',
+  alternates: {
+    canonical: '/accessibility',
+  },
+  openGraph: {
+    title: 'Toegankelijkheidsverklaring | Sranan Story Collective',
+    description:
+      'Toegankelijkheidsverklaring van Sranan Story Collective met huidige stand, verbeteracties en hoe je een toegankelijkheidsprobleem kunt melden.',
+    url: '/accessibility',
+  },
+  twitter: {
+    title: 'Toegankelijkheidsverklaring | Sranan Story Collective',
+    description:
+      'Toegankelijkheidsverklaring van Sranan Story Collective met huidige stand, verbeteracties en hoe je een toegankelijkheidsprobleem kunt melden.',
+  },
 };
 
 export default function AccessibilityStatementPage() {

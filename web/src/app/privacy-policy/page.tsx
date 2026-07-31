@@ -2,9 +2,23 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Privacybeleid | Sranan Story Collective',
+  title: 'Privacybeleid',
   description:
-    'Privacybeleid van Sranan Story Collective over het gebruik van persoonsgegevens op deze website.',
+    'Lees hoe Sranan Story Collective omgaat met privacy op deze website, inclusief de huidige situatie zonder actieve gegevensverzameling.',
+  alternates: {
+    canonical: '/privacy-policy',
+  },
+  openGraph: {
+    title: 'Privacybeleid | Sranan Story Collective',
+    description:
+      'Lees hoe Sranan Story Collective omgaat met privacy op deze website, inclusief de huidige situatie zonder actieve gegevensverzameling.',
+    url: '/privacy-policy',
+  },
+  twitter: {
+    title: 'Privacybeleid | Sranan Story Collective',
+    description:
+      'Lees hoe Sranan Story Collective omgaat met privacy op deze website, inclusief de huidige situatie zonder actieve gegevensverzameling.',
+  },
 };
 
 export default function PrivacyPolicyPage() {

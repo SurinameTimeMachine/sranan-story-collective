@@ -1,4 +1,25 @@
+import type { Metadata } from 'next';
 import Image from 'next/image';
+
+export const metadata: Metadata = {
+  title: 'Home',
+  description:
+    'Sranan Story Collective brengt verhalen, erfgoed en onderzoek samen rond Surinaamse geschiedenissen en gemeenschappen.',
+  alternates: {
+    canonical: '/',
+  },
+  openGraph: {
+    title: 'Sranan Story Collective',
+    description:
+      'Sranan Story Collective brengt verhalen, erfgoed en onderzoek samen rond Surinaamse geschiedenissen en gemeenschappen.',
+    url: '/',
+  },
+  twitter: {
+    title: 'Sranan Story Collective',
+    description:
+      'Sranan Story Collective brengt verhalen, erfgoed en onderzoek samen rond Surinaamse geschiedenissen en gemeenschappen.',
+  },
+};
 
 const kernboodschappen = [
   'Sranan Story Collective brengt verhalen samen die het gedeelde verleden zichtbaar maken en nieuwe toekomsten verbeelden.',
@@ -33,6 +54,38 @@ const teamLinks = [
   },
 ];
 
+const organizationJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  '@id': 'https://srananstorycollective.com/#organization',
+  name: 'Sranan Story Collective',
+  url: 'https://srananstorycollective.com',
+  logo: 'https://srananstorycollective.com/ssc-logo.svg',
+  description:
+    'Sranan Story Collective brengt verhalen, erfgoed en onderzoek samen rond Surinaamse geschiedenissen en gemeenschappen.',
+  sameAs: ['https://surinametijdmachine.org/', 'https://hdsc.ning.com/'],
+  knowsAbout: [
+    'Surinaamse geschiedenis',
+    'diasporagemeenschappen',
+    'erfgoed',
+    'community verhalen',
+  ],
+};
+
+const websiteJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  '@id': 'https://srananstorycollective.com/#website',
+  url: 'https://srananstorycollective.com',
+  name: 'Sranan Story Collective',
+  inLanguage: 'nl-NL',
+  description:
+    'Sranan Story Collective brengt verhalen, erfgoed en onderzoek samen rond Surinaamse geschiedenissen en gemeenschappen.',
+  publisher: {
+    '@id': 'https://srananstorycollective.com/#organization',
+  },
+};
+
 function IbisIcon({
   src = '/red-ibis-5.svg',
   className = '',
@@ -64,6 +117,19 @@ function IbisBullet({ text, icon }: { text: string; icon?: string }) {
 export default function Home() {
   return (
     <div className="relative flex flex-1 justify-center overflow-hidden">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(organizationJsonLd),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(websiteJsonLd),
+        }}
+      />
+
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_8%_10%,rgba(166,71,50,0.18),transparent_33%),radial-gradient(circle_at_92%_16%,rgba(55,84,59,0.2),transparent_35%),linear-gradient(170deg,rgba(255,255,255,0.9),rgba(242,240,235,0.78))]" />
 
       <Image
