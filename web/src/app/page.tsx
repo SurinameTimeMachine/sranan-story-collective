@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
+import Script from 'next/script';
 
 export const metadata: Metadata = {
   title: 'Home',
@@ -117,18 +118,20 @@ function IbisBullet({ text, icon }: { text: string; icon?: string }) {
 export default function Home() {
   return (
     <div className="relative flex flex-1 justify-center overflow-hidden">
-      <script
+      <Script
+        id="ssc-org-jsonld"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(organizationJsonLd),
-        }}
-      />
-      <script
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify(organizationJsonLd)}
+      </Script>
+      <Script
+        id="ssc-website-jsonld"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(websiteJsonLd),
-        }}
-      />
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify(websiteJsonLd)}
+      </Script>
 
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_8%_10%,rgba(166,71,50,0.18),transparent_33%),radial-gradient(circle_at_92%_16%,rgba(55,84,59,0.2),transparent_35%),linear-gradient(170deg,rgba(255,255,255,0.9),rgba(242,240,235,0.78))]" />
 
@@ -153,16 +156,26 @@ export default function Home() {
 
       <main className="z-10 w-full bg-transparent pb-12 pt-8 sm:pt-10">
         <header className="relative mx-auto grid min-h-[74vh] w-full max-w-6xl content-center px-6 pb-16 sm:px-12">
-          <div className="grid gap-8 sm:grid-cols-[220px_1fr] sm:items-center">
-            <Image
-              src="/ssc-logo.svg"
-              alt="Logo van Sranan Story Collective"
-              width={200}
-              height={219}
-              priority
-              style={{ width: 'auto', height: 'auto' }}
-              className="drop-shadow-[0_16px_28px_rgba(20,28,46,0.18)]"
-            />
+          <div className="grid gap-8 sm:grid-cols-[300px_1fr] sm:items-center lg:grid-cols-[360px_1fr]">
+            <div className="relative mx-auto flex w-fit items-center justify-center sm:mx-0">
+              <div
+                aria-hidden="true"
+                className="pointer-events-none absolute h-44 w-44 rounded-full bg-[radial-gradient(circle,rgba(166,71,50,0.34)_0%,rgba(166,71,50,0.15)_44%,transparent_72%)] blur-[1px] sm:h-64 sm:w-64 lg:h-72 lg:w-72"
+              />
+              <div
+                aria-hidden="true"
+                className="pointer-events-none absolute h-52 w-52 rounded-full border border-(--ssc-river-night)/10 sm:h-72 sm:w-72 lg:h-80 lg:w-80"
+              />
+              <Image
+                src="/ssc-logo.svg"
+                alt="Logo van Sranan Story Collective"
+                width={320}
+                height={350}
+                priority
+                style={{ width: 'auto', height: 'auto' }}
+                className="relative z-10 mx-auto w-44 drop-shadow-[0_18px_34px_rgba(20,28,46,0.24)] sm:mx-0 sm:w-60 lg:w-72"
+              />
+            </div>
 
             <div>
               <h1 className="text-6xl leading-[0.9] text-(--ssc-river-night) sm:text-7xl lg:text-8xl">
