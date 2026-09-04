@@ -44,7 +44,10 @@ const teamLinks = [
     name: 'Dewi van Leeuwen Sastromedjo',
     href: 'https://www.huygens.knaw.nl/medewerkers/dewi-van-leeuwen-sastromedjo/',
   },
-  { name: 'Angelique Hoogmoed', href: '' },
+  {
+    name: 'Angelique Hoogmoed',
+    href: 'https://www.huygens.knaw.nl/medewerkers/angelique-hoogmoed/',
+  },
   {
     name: 'Thunnis van Oort',
     href: 'https://www.huygens.knaw.nl/medewerkers/thunnis-van-oort/',
