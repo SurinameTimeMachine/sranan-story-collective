@@ -190,6 +190,58 @@ export default function Home() {
           <div className="mt-10 h-0.5] w-full bg-[linear-gradient(90deg,transparent,rgba(23,37,64,0.35),rgba(166,71,50,0.4),transparent)]" />
         </header>
 
+        <section
+          id="save-the-date"
+          aria-labelledby="save-the-date-heading"
+          className="mx-auto mb-12 w-full max-w-6xl px-6 sm:px-12"
+        >
+          <div className="grid gap-8 rounded-2xl border border-(--ssc-kankantrie-canopy)/20 bg-(--ssc-story-parchment) p-6 sm:p-8 md:grid-cols-[1fr_280px] md:items-center lg:gap-12 lg:p-10">
+            <div>
+              <p className="text-sm font-semibold uppercase tracking-[0.14em] text-(--ssc-ibis-red)">
+                Save the date
+              </p>
+              <h2
+                id="save-the-date-heading"
+                className="mt-3 text-4xl text-(--ssc-river-night) sm:text-5xl"
+              >
+                Eerste publieksbijeenkomst
+              </h2>
+              <p className="mt-6 text-2xl font-semibold leading-snug text-(--ssc-kankantrie-canopy)">
+                <time dateTime="2026-11-29">Zondag 29 november 2026</time>
+              </p>
+              <p className="mt-2 text-lg leading-8 text-(--ssc-river-night)">
+                In de middag · exacte tijden volgen nog
+              </p>
+              <p className="mt-6 text-lg leading-8 text-(--ssc-river-night)">
+                Sranan Story Collective brengt mensen bij elkaar om samen kennis
+                te delen, te verbinden en de toekomst van onze verhalen vorm te
+                geven.
+              </p>
+              <p className="mt-4 text-lg leading-8 text-(--ssc-river-night)">
+                Tijdens deze bijeenkomst wordt de Suriname Tijdmachine
+                gepresenteerd.
+              </p>
+              <p className="mt-6 leading-8 text-(--ssc-kankantrie-root)">
+                De officiële uitnodiging met het volledige programma volgt snel.
+              </p>
+              <a
+                href="/save-the-date-29-november-2026.png"
+                className="mt-5 inline-flex min-h-11 items-center underline decoration-(--ssc-ibis-red) underline-offset-4 hover:decoration-2 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-(--ssc-river-night)"
+              >
+                Bekijk de poster op volledig formaat
+              </a>
+            </div>
+            <Image
+              src="/save-the-date-29-november-2026.png"
+              alt="Save-the-dateposter van Sranan Story Collective voor de eerste publieksbijeenkomst op 29 november 2026. De details staan ook in de tekst naast deze poster."
+              width={859}
+              height={1600}
+              sizes="(min-width: 768px) 280px, (min-width: 400px) 320px, 100vw"
+              className="mx-auto h-auto w-full max-w-80 rounded-lg md:max-w-none"
+            />
+          </div>
+        </section>
+
         <div className="relative mx-auto w-full max-w-5xl px-6 pb-12 sm:px-12">
           <div className="absolute bottom-0 left-6 top-0 w-px bg-[linear-gradient(180deg,rgba(23,37,64,0.05),rgba(23,37,64,0.35),rgba(166,71,50,0.4),rgba(23,37,64,0.05))] sm:left-12" />
 
