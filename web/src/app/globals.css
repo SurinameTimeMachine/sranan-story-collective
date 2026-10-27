@@ -61,3 +61,40 @@ h3 {
   background: color-mix(in srgb, var(--ssc-kankantrie-root) 70%, white);
   color: #fff;
 }
+
+/* Keep anchored sections clear of the wrapping sticky navigation. */
+html {
+  scroll-padding-top: 11rem;
+}
+
+h1,
+h2,
+h3,
+p,
+li,
+dd {
+  overflow-wrap: anywhere;
+}
+
+a:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 4px;
+}
+
+@media (min-width: 640px) {
+  html {
+    scroll-padding-top: 9rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  html {
+    scroll-padding-top: 6rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ibis-drift {
+    animation: none;
+  }
+}

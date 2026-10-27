@@ -1,13 +1,14 @@
+/* eslint-disable @next/next/no-html-link-for-pages -- Native anchors keep repeated section navigation reliable, including from other pages. */
 import Image from 'next/image';
 import Link from 'next/link';
 
 export default function SiteHeader() {
   return (
-    <header className="sticky top-0 z-50 bg-[#f5f1ea]/98">
-      <div className="mx-auto flex w-full max-w-6xl items-center justify-between gap-4 px-6 py-3 sm:px-12">
+    <header className="sticky top-0 z-50 bg-[#f5f1ea]">
+      <div className="mx-auto flex w-full max-w-6xl flex-col items-start justify-between gap-2 px-4 py-3 sm:px-12 lg:flex-row lg:items-center lg:gap-4">
         <Link
           href="/"
-          className="inline-flex items-center gap-2 text-(--ssc-river-night) hover:text-(--ssc-kankantrie-root)"
+          className="inline-flex min-h-11 items-center gap-2 text-(--ssc-river-night) hover:text-(--ssc-kankantrie-root)"
         >
           <Image
             src="/ssc-logo.svg"
@@ -24,32 +25,38 @@ export default function SiteHeader() {
 
         <nav
           aria-label="Hoofdnavigatie"
-          className="flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.13em] text-(--ssc-river-night)/88 sm:gap-5"
+          className="flex w-full flex-wrap items-center gap-x-3 gap-y-1 text-sm font-semibold text-(--ssc-river-night) lg:w-auto lg:gap-x-5"
         >
-          <Link
+          <a
+            href="/#save-the-date"
+            className="inline-flex min-h-11 items-center border-b-2 border-(--ssc-ibis-red) text-(--ssc-ibis-red)"
+          >
+            Lancering
+          </a>
+          <a
             href="/#collectief"
-            className="border-b-2 border-transparent pb-0.5 transition-colors hover:border-(--ssc-ibis-red)/70 hover:text-(--ssc-river-night)"
+            className="inline-flex min-h-11 items-center border-b-2 border-transparent transition-colors hover:border-(--ssc-ibis-red)/70 hover:text-(--ssc-river-night)"
           >
             Collectief
-          </Link>
-          <Link
+          </a>
+          <a
             href="/#tijdmachine"
-            className="border-b-2 border-transparent pb-0.5 transition-colors hover:border-(--ssc-ibis-red)/70 hover:text-(--ssc-river-night)"
+            className="inline-flex min-h-11 items-center border-b-2 border-transparent transition-colors hover:border-(--ssc-ibis-red)/70 hover:text-(--ssc-river-night)"
           >
             Tijdmachine
-          </Link>
-          <Link
+          </a>
+          <a
             href="/#team"
-            className="border-b-2 border-transparent pb-0.5 transition-colors hover:border-(--ssc-ibis-red)/70 hover:text-(--ssc-river-night)"
+            className="inline-flex min-h-11 items-center border-b-2 border-transparent transition-colors hover:border-(--ssc-ibis-red)/70 hover:text-(--ssc-river-night)"
           >
             Team
-          </Link>
-          <Link
+          </a>
+          <a
             href="/#bereik"
-            className="border-b-2 border-transparent pb-0.5 transition-colors hover:border-(--ssc-ibis-red)/70 hover:text-(--ssc-river-night)"
+            className="inline-flex min-h-11 items-center border-b-2 border-transparent transition-colors hover:border-(--ssc-ibis-red)/70 hover:text-(--ssc-river-night)"
           >
             Bereik
-          </Link>
+          </a>
         </nav>
       </div>
     </header>

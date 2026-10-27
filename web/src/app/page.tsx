@@ -158,7 +158,7 @@ export default function Home() {
       />
 
       <main className="z-10 w-full bg-transparent pb-12 pt-8 sm:pt-10">
-        <header className="relative mx-auto grid min-h-[74vh] w-full max-w-6xl content-center px-6 pb-16 sm:px-12">
+        <header className="relative mx-auto grid w-full sm:min-h-[74vh] max-w-6xl content-center px-4 pb-10 sm:pb-16 sm:px-12">
           <div className="grid gap-8 sm:grid-cols-[300px_1fr] sm:items-center lg:grid-cols-[360px_1fr]">
             <Image
               src="/ssc-logo.svg"
@@ -166,15 +166,14 @@ export default function Home() {
               width={320}
               height={350}
               priority
-              style={{ width: 'auto', height: 'auto' }}
-              className="mx-auto w-44 drop-shadow-[0_18px_34px_rgba(20,28,46,0.24)] sm:mx-0 sm:w-60 lg:w-72"
+              className="mx-auto h-auto w-36 drop-shadow-[0_18px_34px_rgba(20,28,46,0.24)] sm:mx-0 sm:w-60 lg:w-72"
             />
 
             <div>
-              <h1 className="text-6xl leading-[0.9] text-(--ssc-river-night) sm:text-7xl lg:text-8xl">
+              <h1 className="text-4xl leading-tight text-(--ssc-river-night) sm:text-7xl lg:text-8xl">
                 Sranan Story Collective
               </h1>
-              <p className="mt-5 text-2xl leading-9 text-(--ssc-river-night)/90">
+              <p className="mt-5 text-xl leading-8 sm:text-2xl sm:leading-9 text-(--ssc-river-night)/90">
                 In het kort: SSC voegt het menselijk verhaal toe aan de Suriname
                 Time Machine.
               </p>
@@ -187,58 +186,111 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="mt-10 h-0.5] w-full bg-[linear-gradient(90deg,transparent,rgba(23,37,64,0.35),rgba(166,71,50,0.4),transparent)]" />
+          <div className="mt-10 h-0.5 w-full bg-[linear-gradient(90deg,transparent,rgba(23,37,64,0.35),rgba(166,71,50,0.4),transparent)]" />
         </header>
 
         <section
           id="save-the-date"
-          aria-labelledby="save-the-date-heading"
-          className="mx-auto mb-12 w-full max-w-6xl px-6 sm:px-12"
+          aria-labelledby="launch-heading"
+          className="mx-auto mb-12 w-full max-w-6xl px-4 sm:px-12"
         >
-          <div className="grid gap-8 rounded-2xl border border-(--ssc-kankantrie-canopy)/20 bg-(--ssc-story-parchment) p-6 sm:p-8 md:grid-cols-[1fr_280px] md:items-center lg:gap-12 lg:p-10">
-            <div>
-              <p className="text-sm font-semibold uppercase tracking-[0.14em] text-(--ssc-ibis-red)">
-                Save the date
+          <div className="overflow-hidden rounded-2xl border border-(--ssc-kankantrie-canopy)/20 bg-(--ssc-story-parchment)">
+            <div className="bg-(--ssc-ibis-red) px-5 py-6 text-(--ssc-story-parchment) sm:px-8 lg:px-10">
+              <p className="text-sm font-semibold uppercase tracking-[0.12em]">
+                Sranan Story Collective × Suriname Tijd Machine
               </p>
-              <h2
-                id="save-the-date-heading"
-                className="mt-3 text-4xl text-(--ssc-river-night) sm:text-5xl"
-              >
-                Eerste publieksbijeenkomst
+              <h2 id="launch-heading" className="mt-3 max-w-3xl text-3xl leading-tight sm:text-5xl">
+                Kom naar de lancering van het Sranan Story Collective!
               </h2>
-              <p className="mt-6 text-2xl font-semibold leading-snug text-(--ssc-kankantrie-canopy)">
-                <time dateTime="2026-11-29">Zondag 29 november 2026</time>
-              </p>
-              <p className="mt-2 text-lg leading-8 text-(--ssc-river-night)">
-                In de middag · exacte tijden volgen nog
-              </p>
-              <p className="mt-6 text-lg leading-8 text-(--ssc-river-night)">
-                Sranan Story Collective brengt mensen bij elkaar om samen kennis
-                te delen, te verbinden en de toekomst van onze verhalen vorm te
-                geven.
-              </p>
-              <p className="mt-4 text-lg leading-8 text-(--ssc-river-night)">
-                Tijdens deze bijeenkomst wordt de Suriname Tijdmachine
-                gepresenteerd.
-              </p>
-              <p className="mt-6 leading-8 text-(--ssc-kankantrie-root)">
-                De officiële uitnodiging met het volledige programma volgt snel.
-              </p>
+              <p className="mt-4 text-xl">Ontdek. Beleef. Verbind.</p>
+            </div>
+
+            <div className="grid gap-8 p-5 sm:p-8 lg:grid-cols-[minmax(0,1fr)_320px] lg:items-start lg:gap-10 lg:p-10">
+              <div>
+                <p className="text-lg leading-8">
+                  Een bijzondere middag van Sranan Story Collective en Suriname
+                  Tijd Machine. Samen lanceren we ons gloednieuwe collectief!
+                </p>
+
+                <dl className="mt-6 space-y-5 text-lg leading-8">
+                  <div>
+                    <dt className="font-semibold text-(--ssc-ibis-red)">Datum</dt>
+                    <dd>
+                      <time dateTime="2026-11-29" className="font-semibold">
+                        Zondag 29 november 2026
+                      </time>
+                    </dd>
+                  </div>
+                  <div>
+                    <dt className="font-semibold text-(--ssc-ibis-red)">Tijd</dt>
+                    <dd>
+                      <span className="block">Inloop vanaf 14:00 uur</span>
+                      <span className="block">Start programma 14:15 uur</span>
+                      <span className="block">Afsluitende borrel tot 17:30 uur</span>
+                    </dd>
+                  </div>
+                  <div>
+                    <dt className="font-semibold text-(--ssc-ibis-red)">Locatie</dt>
+                    <dd>
+                      <span className="block font-semibold">Zandkasteel</span>
+                      <span className="block">Bijlmerplein 888<br />1102 MG Amsterdam-Zuidoost</span>
+                      <p className="mt-1 text-base leading-7">
+                        Goed bereikbaar met het OV, op loopafstand van station
+                        Amsterdam Bijlmer-ArenA.
+                      </p>
+                    </dd>
+                  </div>
+                </dl>
+
+                <div className="mt-6 rounded-xl bg-(--ssc-kankantrie-canopy) p-5 text-(--ssc-story-parchment) sm:p-6">
+                  <div className="flex flex-col items-start gap-4">
+                    <div>
+                      <p className="text-xl font-semibold">Er zijn maximaal 100 plaatsen.</p>
+                      <p className="mt-2 leading-7">Verzeker je van een plek bij de lancering.</p>
+                    </div>
+                    <a
+                      href="https://forms.gle/JXyYdhcaZqjm9niN7"
+                      className="inline-flex min-h-12 w-full sm:w-auto shrink-0 items-center justify-center rounded-lg bg-(--ssc-story-parchment) px-6 py-3 text-lg font-semibold text-(--ssc-river-night)! transition-colors hover:bg-white focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-(--ssc-story-parchment)"
+                    >
+                      Meld je aan
+                      <span aria-hidden="true" className="ml-3">→</span>
+                    </a>
+                  </div>
+                  <p className="mt-5 text-base leading-7">Aanmelden via Google Forms.</p>
+                  <p className="mt-1 max-w-3xl text-base leading-7">
+                    Je gegevens worden uitsluitend gebruikt voor de organisatie van
+                    dit evenement, tenzij je expliciet toestemming geeft voor onze
+                    nieuwsbrief.
+                  </p>
+                </div>
+
+                <h3 className="mt-7 text-3xl text-(--ssc-kankantrie-root)">
+                  Wat kun je verwachten?
+                </h3>
+                <ul className="mt-4 space-y-3 text-lg leading-8">
+                  <IbisBullet text="Een inspirerend middagprogramma met een talkshow vol verhalen en verbinding." />
+                  <IbisBullet text="Ruimte om te netwerken met gelijkgestemden." />
+                  <IbisBullet text="Een gezellige afsluitende borrel om na te praten." />
+                </ul>
+              </div>
+
               <a
-                href="/save-the-date-29-november-2026.png"
-                className="mt-5 inline-flex min-h-11 items-center underline decoration-(--ssc-ibis-red) underline-offset-4 hover:decoration-2 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-(--ssc-river-night)"
+                href="/lancering-29-november-2026.png"
+                className="mx-auto block w-full max-w-sm rounded-lg underline underline-offset-4 hover:decoration-2 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-(--ssc-river-night) lg:max-w-none"
               >
-                Bekijk de poster op volledig formaat
+                <Image
+                  src="/lancering-29-november-2026.png"
+                  alt="Flyer voor de lancering van Sranan Story Collective op 29 november 2026 in Zandkasteel. Alle evenementgegevens staan ook in deze sectie."
+                  width={1120}
+                  height={1584}
+                  sizes="(min-width: 1024px) 320px, (min-width: 480px) 384px, calc(100vw - 72px)"
+                  className="h-auto w-full rounded-lg border border-(--ssc-kankantrie-root)/15"
+                />
+                <span className="mt-3 inline-flex min-h-11 items-center text-base">
+                  Bekijk de flyer op volledig formaat
+                </span>
               </a>
             </div>
-            <Image
-              src="/save-the-date-29-november-2026.png"
-              alt="Save-the-dateposter van Sranan Story Collective voor de eerste publieksbijeenkomst op 29 november 2026. De details staan ook in de tekst naast deze poster."
-              width={859}
-              height={1600}
-              sizes="(min-width: 768px) 280px, (min-width: 400px) 320px, 100vw"
-              className="mx-auto h-auto w-full max-w-80 rounded-lg md:max-w-none"
-            />
           </div>
         </section>
 
@@ -246,7 +298,7 @@ export default function Home() {
           <div className="absolute bottom-0 left-6 top-0 w-px bg-[linear-gradient(180deg,rgba(23,37,64,0.05),rgba(23,37,64,0.35),rgba(166,71,50,0.4),rgba(23,37,64,0.05))] sm:left-12" />
 
           <section id="collectief" className="relative py-8 pl-6 sm:pl-10">
-            <h2 className="text-4xl text-(--ssc-river-night)">
+            <h2 className="text-3xl sm:text-4xl text-(--ssc-river-night)">
               Wat is Sranan Story Collective?
             </h2>
             <p className="mt-4 leading-8 text-(--ssc-river-night)/92">
@@ -271,7 +323,7 @@ export default function Home() {
             <div className="mb-4 text-sm uppercase tracking-[0.14em] text-(--ssc-kankantrie-canopy)">
               Verbinding met de Suriname Time Machine
             </div>
-            <h2 className="text-4xl text-(--ssc-kankantrie-canopy)">
+            <h2 className="text-3xl sm:text-4xl text-(--ssc-kankantrie-canopy)">
               Wat is Suriname Time Machine?
             </h2>
             <p className="mt-4 leading-8 text-(--ssc-river-night)/92">
@@ -319,7 +371,7 @@ export default function Home() {
           </section>
 
           <section className="relative py-8 pl-6 sm:pl-10">
-            <h2 className="text-4xl text-(--ssc-ibis-red)">
+            <h2 className="text-3xl sm:text-4xl text-(--ssc-ibis-red)">
               Methodologie en co-creatie
             </h2>
             <p className="mt-4 leading-8 text-(--ssc-river-night)/92">
@@ -345,7 +397,7 @@ export default function Home() {
           </section>
 
           <section className="relative py-8 pl-6 sm:pl-10">
-            <h2 className="text-4xl text-(--ssc-river-night)">
+            <h2 className="text-3xl sm:text-4xl text-(--ssc-river-night)">
               Kernboodschappen
             </h2>
             <ul className="mt-4 space-y-3 leading-8 text-(--ssc-river-night)/92">
@@ -360,7 +412,7 @@ export default function Home() {
           </section>
 
           <section id="team" className="relative py-8 pl-6 sm:pl-10">
-            <h2 className="text-4xl text-(--ssc-river-night)">Het team</h2>
+            <h2 className="text-3xl sm:text-4xl text-(--ssc-river-night)">Het team</h2>
             <p className="mt-4 leading-8 text-(--ssc-river-night)/92">
               Het team van SSC bestaat uit drie community builders: Sharmila
               Badloe, Dewi van Leeuwen Sastromedjo en Angelique Hoogmoed.
@@ -403,7 +455,7 @@ export default function Home() {
           </section>
 
           <section id="bereik" className="relative py-8 pl-6 sm:pl-10">
-            <h2 className="text-4xl text-(--ssc-kankantrie-root)">
+            <h2 className="text-3xl sm:text-4xl text-(--ssc-kankantrie-root)">
               Communicatie en publieksbereik
             </h2>
             <p className="mt-4 leading-8 text-(--ssc-river-night)/92">
