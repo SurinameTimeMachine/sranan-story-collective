@@ -111,6 +111,7 @@ export default function SiteFooter() {
             <Link href="/privacy-policy" className="hover:text-white">Privacybeleid</Link>
             <Link href="/accessibility" className="hover:text-white">Toegankelijkheid</Link>
             <Link href="/disclaimer-copyright" className="hover:text-white">Disclaimer en copyright</Link>
+            <a href="mailto:Srananstorycollective@huygens.knaw.nl" className="hover:text-white">Email contact</a>
             <Link href="/#team" className="hover:text-white">Contact via team</Link>
           </nav>
         </div>

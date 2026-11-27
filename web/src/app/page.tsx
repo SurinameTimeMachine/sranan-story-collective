@@ -478,7 +478,14 @@ export default function Home() {
               >
                 teamoverzicht
               </a>{' '}
-              hierboven.
+              hierboven, of je kunt ons mailen op{' '}
+              <a
+                href="mailto:Srananstorycollective@huygens.knaw.nl"
+                className="border-b border-(--ssc-ibis-red)/60 pb-0.5 hover:border-(--ssc-river-night)"
+              >
+                Srananstorycollective@huygens.knaw.nl
+              </a>
+              .
             </p>
             <p className="mt-4 leading-8 text-(--ssc-river-night)/92">
               Onze website is nog in aanbouw.
